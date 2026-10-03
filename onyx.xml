@@ -33,6 +33,7 @@
   <project path="hardware/qcom-caf/sm8750/display/core" name="LineageOS/android_vendor_qcom_opensource_display-core" remote="lineageos" revision="lineage-24.0-caf-sm8750" />
   <project path="hardware/qcom-caf/sm8750/display/hal" name="LineageOS/android_hardware_qcom_display" remote="lineageos" revision="lineage-24.0-caf-sm8750" />
   <project path="hardware/qcom-caf/sm8750/display/intf" name="LineageOS/android_vendor_qcom_opensource_display-intf" remote="lineageos" revision="lineage-24.0-caf-sm8750" />
+ <project path="vendor/qcom/opensource/commonsys-intf/audio" name="android_vendor_qcom_opensource_audio-commonsys-intf" remote="lineage" revision="lineage-24.0" />  
 
   <!-- Apps -->
   <project path="packages/apps/NotGameTurbo" name="Zarathos30/android_packages_apps_NotGameTurbo" remote="github" revision="seventeen" />
