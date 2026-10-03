@@ -1,26 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-     SPDX-FileCopyrightText: Paranoid Android
-     SPDX-License-Identifier: Apache-2.0
-
-     Local manifest for POCO F7 / Redmi Turbo 4 Pro (onyx) on AOSPA (calcite).
-
-     Copy this file to .repo/local_manifests/onyx.xml after:
-       repo init -u https://github.com/AOSPA/manifest -b calcite
--->
 <manifest>
   <remote name="github" fetch="https://github.com" />
   <remote name="lineageos" fetch="https://github.com" />
 
-  <!-- Device -->
+  <!-- Device Trees -->
   <project path="device/xiaomi/onyx" name="Zarathos30/android_device_xiaomi_onyx" remote="github" revision="calcite" />
   <project path="device/xiaomi/onyx-miuicamera" name="Zarathos30/android_device_xiaomi_onyx-miuicamera" remote="github" revision="seventeen" />
 
-  <!-- Prebuilt kernel (Image, dtbs, modules) -->
+  <!-- Prebuilt Kernel -->
   <project path="device/xiaomi/onyx-kernel" name="Zarathos30/android_device_xiaomi_onyx-kernel" remote="github" revision="calcite" clone-depth="1" />
 
-  <!-- Hardware Xiaomi (Remove a definição base da ROM antes de adicionar a personalizada) -->
-  <remove-project name="android_hardware_xiaomi" />
+  <!-- Hardware Xiaomi -->
   <project path="hardware/xiaomi" name="AOSPA/android_hardware_xiaomi" remote="github" revision="calcite" />
 
   <!-- Hardware CAF sm8750 -->
@@ -37,18 +27,10 @@
   <project path="hardware/qcom-caf/sm8750/display/hal" name="LineageOS/android_hardware_qcom_display" remote="lineageos" revision="lineage-24.0-caf-sm8750" />
   <project path="hardware/qcom-caf/sm8750/display/intf" name="LineageOS/android_vendor_qcom_opensource_display-intf" remote="lineageos" revision="lineage-24.0-caf-sm8750" />
   
-  <!-- Audio Commonsys Intf (Corrigido remote="lineageos" e nome completo da org) -->
+  <!-- Audio Commonsys Intf -->
   <project path="vendor/qcom/opensource/commonsys-intf/audio" name="LineageOS/android_vendor_qcom_opensource_audio-commonsys-intf" remote="lineageos" revision="lineage-24.0" />
 
-  <!-- Apps -->
+  <!-- Apps & Blobs -->
   <project path="packages/apps/NotGameTurbo" name="Zarathos30/android_packages_apps_NotGameTurbo" remote="github" revision="seventeen" />
-
-  <!-- Blobs -->
   <project path="vendor/xiaomi/onyx" name="Zarathos30/android_vendor_xiaomi_onyx" remote="github" revision="seventeen" />
-
-  <!-- Kernel sources -->
-  <!--
-  <project path="kernel/xiaomi/sm8735" name="Zarathos30/android_kernel_xiaomi_sm8735" remote="github" revision="seventeen" />
-  <project path="kernel/xiaomi/sm8735-modules" name="Zarathos30/android_kernel_xiaomi_sm8735-modules" remote="github" revision="seventeen" />
-  -->
 </manifest>
