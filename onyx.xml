@@ -8,7 +8,7 @@
   <project path="device/xiaomi/onyx-miuicamera" name="Zarathos30/android_device_xiaomi_onyx-miuicamera" remote="github" revision="seventeen" />
 
   <!-- Prebuilt Kernel -->
-  <project path="device/xiaomi/onyx-kernel" name="Zarathos30/android_device_xiaomi_onyx-kernel" remote="github" revision="calcite" clone-depth="1" />
+  <project path="device/xiaomi/onyx-kernel" name="Zarathos30/android_device_xiaomi_onyx-kernel-aospa" remote="github" revision="calcite" clone-depth="1" />
 
   <!-- Hardware CAF sm8750 -->
   <project path="hardware/qcom-caf/common" name="LineageOS/android_hardware_qcom-caf_common" remote="lineageos" revision="lineage-24.0">
