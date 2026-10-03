@@ -10,9 +10,6 @@
   <!-- Prebuilt Kernel -->
   <project path="device/xiaomi/onyx-kernel" name="Zarathos30/android_device_xiaomi_onyx-kernel" remote="github" revision="calcite" clone-depth="1" />
 
-  <!-- Hardware Xiaomi -->
-  <project path="hardware/xiaomi" name="AOSPA/android_hardware_xiaomi" remote="github" revision="calcite" />
-
   <!-- Hardware CAF sm8750 -->
   <project path="hardware/qcom-caf/common" name="LineageOS/android_hardware_qcom-caf_common" remote="lineageos" revision="lineage-24.0">
     <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8750/Android.bp" />
